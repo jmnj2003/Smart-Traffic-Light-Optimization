@@ -93,10 +93,6 @@ The script will:
 ```
 ├── TrafficLightEnv.py        # environment, Q-learning training, plot, Pygame simulation
 ├── requirements.txt
-└── assets/
-    ├── poster.jpg            # project poster
-    ├── learning_curve.png    # reward per episode
-    └── training_flowchart.png
 ```
 
 ## Limitations and future work
