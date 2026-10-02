@@ -2,12 +2,6 @@
 
 A reinforcement learning agent that learns how to run a traffic light controller: keep the normal Red → Green → Yellow cycle going, and repair the light quickly when it breaks. The agent is trained with tabular **Q-learning** and the learned policy is shown in a small **Pygame** simulation.
 
-> Group project for **SAIA 2123 Reinforcement Learning**, Bachelor in Artificial Intelligence, Universiti Teknologi Malaysia (Semester 1, 2025/2026).
-
-<p align="center">
-  <img src="assets/poster.jpg" alt="Project poster: Smart Traffic Light Optimization" width="560">
-</p>
-
 ---
 
 ## Problem
@@ -56,16 +50,8 @@ Actions are chosen with an **ε-greedy** policy: a random action with probabilit
 | Discount factor γ | 0.96 |
 | Exploration rate ε | 0.18 (fixed) |
 
-<details>
-<summary>Training flowchart</summary>
-<p align="center"><img src="assets/training_flowchart.png" alt="Q-learning training flowchart" width="320"></p>
-</details>
 
 ## Results
-
-<p align="center">
-  <img src="assets/learning_curve.png" alt="Cumulative reward per episode over 2,000 episodes with 100-episode moving average" width="760">
-</p>
 
 - **Learned policy:** *Change Light* in the Normal state and *Attempt Fix* in the Fault state, which is the intended behaviour.
 - **Convergence:** the 100-episode moving average levels off at about **−140 reward per episode** and stays there, so the Q-values have stabilised.
